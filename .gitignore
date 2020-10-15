@@ -1,0 +1,13 @@
+# Code Editor
+.idea
+.vscode
+
+# Lock File
+**/yarn.lock
+
+# Node Modules
+**/node_modules
+
+
+# Error File
+yarn-error.log
