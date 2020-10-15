@@ -9,7 +9,7 @@ interface RefForChartInstance {
     chartInstance?: Chart;
 }
 
-const ReactChartJs: FunctionComponent<ReactChartJSProps> = (props) => {
+const ReactChartJs: FunctionComponent<ReactChartJSProps> = (props: any) => {
     const { chartConfig } = props;
 
     const canvasDomRef = useRef<HTMLCanvasElement>();
@@ -29,7 +29,7 @@ const ReactChartJs: FunctionComponent<ReactChartJSProps> = (props) => {
     return (
         <div>
             <canvas
-                ref={(instance) => {
+                ref={(instance: any) => {
                     canvasDomRef.current = instance!;
                 }}
                 width="400"

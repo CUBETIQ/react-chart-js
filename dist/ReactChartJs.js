@@ -32,10 +32,6 @@ var ReactChartJs = function (props) {
             chartInstance.destroy();
         }
         chartInstanceRef.current.chartInstance = new chart_js_1.Chart(canvasDom, chartConfig);
-        // if (!chartInstance) {
-        // } else {
-        //     chartInstanceRef.current!.chartInstance.update()
-        // }
     }, [chartConfig]);
     return (react_1.default.createElement("div", null,
         react_1.default.createElement("canvas", { ref: function (instance) {
