@@ -34,9 +34,6 @@
         "publish": "npm publish --access public",
         "run:example": "cd examples/line-chart-example && yarn start"
     },
-    "publishConfig": {
-        "registry": "https://npm.osa.cubetiqs.com"
-    },
     "devDependencies": {
         "@babel/core": "^7.11.4",
         "@babel/preset-env": "^7.11.0",
