@@ -1,6 +1,6 @@
 {
     "name": "@cubetiq/react-chart-js",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Chart.js for React and TypeScript",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -31,8 +31,11 @@
         "build": "tsc",
         "test": "jest",
         "build:test": "yarn jest && yarn build",
-        "publish": "yarn build:test && npm publish --registry https://npm.osa.cubetiqs.com --access public",
+        "publish": "yarn build:test && npm publish --access public",
         "run:example": "cd examples/line-chart-example && yarn start"
+    },
+    "publishConfig": {
+        "registry": "https://npm.osa.cubetiqs.com"
     },
     "devDependencies": {
         "@babel/core": "^7.11.4",
