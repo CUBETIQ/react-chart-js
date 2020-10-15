@@ -9,12 +9,12 @@ interface RefForChartInstance {
     chartInstance?: Chart;
 }
 
-const ReactChartJs: FunctionComponent<ReactChartJSProps> = props => {
+const ReactChartJs: FunctionComponent<ReactChartJSProps> = (props) => {
     const { chartConfig } = props;
 
     const canvasDomRef = useRef<HTMLCanvasElement>();
 
-    const chartInstanceRef = useRef<RefForChartInstance >({});
+    const chartInstanceRef = useRef<RefForChartInstance>({});
 
     useEffect(() => {
         const canvasDom = canvasDomRef.current;
@@ -24,13 +24,12 @@ const ReactChartJs: FunctionComponent<ReactChartJSProps> = props => {
             chartInstance.destroy();
         }
         chartInstanceRef.current!.chartInstance = new Chart(canvasDom!, chartConfig!);
-
     }, [chartConfig]);
 
     return (
         <div>
             <canvas
-                ref={instance => {
+                ref={(instance) => {
                     canvasDomRef.current = instance!;
                 }}
                 width="400"
