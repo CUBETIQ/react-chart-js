@@ -1,4 +1,4 @@
-### Line Chart Example
+# Line Chart Example
 
 ```typescript
 import React from 'react';

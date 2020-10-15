@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactChartJs } from '@cubetiq/react-chart-js';
 
-function LineChartExample(props) {
+function LineChartExample(props: any) {
     return (
         <ReactChartJs
             chartConfig={{
