@@ -14,7 +14,8 @@ OR using Yarn
 yarn add @cubetiq/react-chart-js
 ```
 
-### Link to examples: [https://git.cubetiqs.com/CUBETIQ/react-chart-js/src/branch/master/examples/line-chart-example](https://git.cubetiqs.com/CUBETIQ/react-chart-js/src/branch/master/examples/line-chart-example)
+
+### View a [Demo](https://cubetiq.github.io/chartjs-demos)
 
 ### Line Chart Example
 ```typescript
