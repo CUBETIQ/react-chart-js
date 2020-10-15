@@ -5,7 +5,7 @@
 Using NPM
 
 ```shell
-npm add @cubetiq/react-chart-js
+npm install @cubetiq/react-chart-js
 ```
 
 OR using Yarn
