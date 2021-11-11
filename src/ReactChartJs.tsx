@@ -1,12 +1,13 @@
-import { Chart, ChartConfiguration } from 'chart.js';
+import Chart from 'chart.js/auto';
+import { ChartConfiguration } from 'chart.js';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 
 interface ReactChartJSProps {
-    chartConfig?: ChartConfiguration;
+    chartConfig: ChartConfiguration;
     width?: number;
     height?: number;
-    containerProps: any;
-    canvasProps: any;
+    containerProps?: any;
+    canvasProps?: any;
 }
 
 interface RefForChartInstance {

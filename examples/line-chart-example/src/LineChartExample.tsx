@@ -5,40 +5,21 @@ function LineChartExample(props: any) {
     return (
         <ReactChartJs
             chartConfig={{
-                type: 'line',
-                options: {
-                    responsive: true,
-                    title: {
-                        display: true,
-                        text: 'Monthly Payments',
-                    },
-                    tooltips: {
-                        mode: 'index',
-                        intersect: false,
-                    },
-                    hover: {
-                        mode: 'nearest',
-                        intersect: true,
-                    },
-                },
+                type: 'pie',
                 data: {
+                    labels: ['Red', 'Blue', 'Yellow'],
                     datasets: [
                         {
-                            label: 'Part-time',
-                            data: [5, 10, 30],
-                            fill: false,
-                            borderColor: '#ff6384',
-                        },
-                        {
-                            label: 'Full-time',
-                            data: [10, 15, 45],
-                            fill: false,
-                            borderColor: '#36a2eb',
+                            label: 'My First Dataset',
+                            data: [300, 50, 100],
+                            backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
+                            hoverOffset: 4,
                         },
                     ],
-                    labels: ['Jan', 'Feb', 'Mar'],
                 },
             }}
+            containerProps={null}
+            canvasProps={null}
         />
     );
 }
