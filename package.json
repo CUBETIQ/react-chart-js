@@ -30,7 +30,7 @@
     "scripts": {
         "build": "tsc",
         "test": "jest",
-        "pub": "npm publish --access public",
+        "pub": "npm publish --access public --registry https://registry.npmjs.org",
         "build:test": "yarn jest && yarn build",
         "run:example": "cd examples/line-chart-example && yarn start"
     },

@@ -18,8 +18,6 @@ function LineChartExample(props: any) {
                     ],
                 },
             }}
-            containerProps={null}
-            canvasProps={null}
         />
     );
 }
