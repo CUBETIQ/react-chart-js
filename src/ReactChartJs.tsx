@@ -3,6 +3,10 @@ import React, { FunctionComponent, useEffect, useRef } from 'react';
 
 interface ReactChartJSProps {
     chartConfig?: ChartConfiguration;
+    width?: number;
+    height?: number;
+    containerProps: any;
+    canvasProps: any;
 }
 
 interface RefForChartInstance {
@@ -10,7 +14,7 @@ interface RefForChartInstance {
 }
 
 const ReactChartJs: FunctionComponent<ReactChartJSProps> = (props: any) => {
-    const { chartConfig } = props;
+    const { chartConfig, containerProps, canvasProps } = props;
 
     const canvasDomRef = useRef<HTMLCanvasElement>();
 
@@ -27,13 +31,14 @@ const ReactChartJs: FunctionComponent<ReactChartJSProps> = (props: any) => {
     }, [chartConfig]);
 
     return (
-        <div>
+        <div {...containerProps}>
             <canvas
                 ref={(instance: any) => {
                     canvasDomRef.current = instance!;
                 }}
-                width="400"
-                height="200"
+                width={props.width || 'auto'}
+                height={props.height || 'auto'}
+                {...canvasProps}
             />
         </div>
     );

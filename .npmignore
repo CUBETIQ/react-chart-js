@@ -8,3 +8,18 @@
 # Lock File
 yarn.lock
 package.lock.json
+examples
+test
+jest.config.js
+yarn-error.log
+.eslintrc.js
+.prettierrc.js
+.stylelintrc.js
+.babelrc
+.eslintignore
+.prettierignore
+.stylelintignore
+.gitignore
+.gitattributes
+.editorconfig
+.env
